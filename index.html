@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Encriptador de Códigos</title>
+</head> 
+<body>
+        <header>
+            <img src="Imagenes/Vector.png" class="logo">
+        </header>
+        <main class="main">
+            <section>
+                    <textarea class="campo-texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                <div>
+                    <p><img src="Imagenes/Exclamacion.png"> Solo letras minúsculas y sin acentos </p>
+                </div>
+                <div class="botones">
+                    <button class="botonEncriptar" onclick="botonEncriptar()"> Encriptar </button>
+                    <button class="botonDesencriptar" onclick="botonDesencriptar()"> Desencriptar </button>
+                </div>
+            </section>
+            <section class="campo-mensaje">
+                <textarea id="campo-mensaje" class="mensaje" cols="30" rows="10"></textarea>
+                    <div>
+                        <button class="btnCopiar" onclick="copiar()">Copiar</button>
+                    </div>
+                    <div class="sinTexto">
+                        <h1>Ningún mensaje fue encontrado</h1>
+                        <p2 id="parrafo">Ingrese el texto que desees encriptar o desencriptar</p2>
+                    </div>
+            </section>
+        </main>
+   
+    <script src="Encriptador.js"> </script>
+</body>
+</html>
